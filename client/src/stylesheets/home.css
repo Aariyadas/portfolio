@@ -26,3 +26,13 @@
     border: none;
 
 }
+
+@media (max-width:750px)
+{
+    .introduction div h1{
+    font-weight: bold;
+    color:rgba(245, 242, 243, 0.616);
+    font-size: 600px;
+    }
+
+}

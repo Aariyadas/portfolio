@@ -8,12 +8,15 @@ const Header = () => {
   return (
     <div className="header">
       {showHeader ? (
-        <RiCloseFill onClick={()=>{setShowHeader(!showHeader)}}
-        className=" menu-icon position-fixed top-0 end-0 " />
+        <RiCloseFill 
+        onClick={()=>{setShowHeader(!showHeader)}}
+        className="menu-icon position-fixed top-0 end-0 " />
       ) : (
-        <RiMenu3Fill className=" menu-icon position-fixed top-0 end-0 " onClick={()=>{setShowHeader(!showHeader)}} />
+        <RiMenu3Fill
+         className=" menu-icon position-fixed top-0 end-0 " 
+         onClick={()=>{setShowHeader(!showHeader)}} />
       )}
-      <ul className={`${showHeader ? 'show-header':'hide-header' }`}>
+      <ul className={`${showHeader ? 'show-header':'hide-header'} n-box1`}>
         <li><Link>Home</Link></li>
         <li><Link>Project</Link></li>
         <li><Link>Contact</Link></li>
