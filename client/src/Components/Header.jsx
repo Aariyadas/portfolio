@@ -5,6 +5,7 @@ import { RiMenu3Fill, RiCloseFill } from "react-icons/ri";
 
 const Header = () => {
   const [showHeader, setShowHeader] = useState(false);
+  const path=window.location.pathname
   return (
     <div className="header">
       {showHeader ? (
@@ -17,9 +18,9 @@ const Header = () => {
          onClick={()=>{setShowHeader(!showHeader)}} />
       )}
       <ul className={`${showHeader ? 'show-header':'hide-header'} n-box1`}>
-        <li><Link>Home</Link></li>
-        <li><Link>Project</Link></li>
-        <li><Link>Contact</Link></li>
+        <li className={`${path==='/' && `active`}`}><Link to='/'>Home</Link></li>
+        <li><Link to='/project'>Project</Link></li>
+        <li><Link to='/contact'>Contact</Link></li>
       </ul>
     </div>
   );
