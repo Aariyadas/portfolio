@@ -19,7 +19,7 @@ const Header = () => {
       )}
       <ul className={`${showHeader ? 'show-header':'hide-header'} n-box1`}>
         <li className={`${path==='/' && `active`}`}><Link to='/'>Home</Link></li>
-        <li><Link to='/project'>Project</Link></li>
+        <li className={`${path==='/project' && 'active'}`}><Link to='/project'>Project</Link></li>
         <li><Link to='/contact'>Contact</Link></li>
       </ul>
     </div>

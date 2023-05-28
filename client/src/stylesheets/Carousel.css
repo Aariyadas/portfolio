@@ -1,0 +1,10 @@
+.courosel-parent {
+    height: 100vh;
+    background-color: rgba(0, 58, 58);
+    color: white;
+  }
+  
+  .courosel-parent h1 {
+    color: white; /* Update the text color to white or any other contrasting color */
+  }
+  

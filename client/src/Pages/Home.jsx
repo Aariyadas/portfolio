@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../Components/Header'
+import Courosel from '../Components/Courosel'
 
 const Home = () => {
   return (
@@ -17,6 +18,8 @@ const Home = () => {
             </div>
          </div>
         </div>
+        
+        <Courosel/>
     </div>
    
   )
