@@ -5,6 +5,7 @@ import Project from './Pages/Project';
 import Contact from './Pages/Contact';
 import '../src/stylesheets/home.css'
 import '../src/stylesheets/header-footer.css'
+import '../src/stylesheets/carousel.css'
 
 import './index.css'
 function App() {
